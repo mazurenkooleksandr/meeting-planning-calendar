@@ -1,0 +1,33 @@
+.second-container {
+    display: flex;
+    justify-content: center;
+    
+    table {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 20px;
+        border-collapse: collapse;
+        text-align: center;
+       
+        th, td:first-child {
+            background: #bfc1d6;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        
+        th, td {
+            border-style: solid;
+            border-width: 0 1px 1px 0;
+            border-color: rgb(222, 225, 228);
+            width: 210px;
+            height: 60px;
+        }
+        
+        td {
+            background: #fff;
+        }
+        
+        th:first-child, td:first-child {
+            text-align: center;
+        }
+    }
+}
