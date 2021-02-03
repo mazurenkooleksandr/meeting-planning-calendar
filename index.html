@@ -24,7 +24,7 @@
                      <option>Andrew</option>
                 </select>
 
-                <button class="first-container__button">New event +</button>
+                <button  id="btn_modal_window" class="first-container__button">New event +</button>
             </div>
         </div>
     </section>
@@ -114,7 +114,10 @@
         </table>
     </section>
 
-    <section class="third-container">
+    <section id="my_modal" class="third-container">
+        <div class="modal_content">
+
+        <div  class="modal">
 
         <div class="third-container__header">
             <p>Creating new event</p>
@@ -162,8 +165,11 @@
         </div>
 
         <div class="third-container__buttons">
-            <button>Cancel</button>
+            <button class="close_modal_window">Cancel</button>
             <button>Create</button>
+        </div>
+    </div>
+
         </div>
     </section>
 
@@ -179,5 +185,6 @@
             <button>Yes</button>
         </div>
     </section>  
+    <script src="popup.js"></script>
 </body>
 </html>
