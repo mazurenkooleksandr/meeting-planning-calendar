@@ -15,13 +15,13 @@
             <h1 class="first-container__header">Calendar</h1>
 
             <div class="first-container__second-block">
-                <select class="first-container__list">
-                     <option>All members</option>
-                     <option>Maria</option>
-                     <option>Bob</option>
-                     <option>Alex</option>
-                     <option>Mike</option>
-                     <option>Andrew</option>
+                <select class="first-container__list" name="participants">
+                     <option value="1">All members</option>
+                     <option value="2">Maria</option>
+                     <option value="3">Bob</option>
+                     <option value="4">Alex</option>
+                     <option value="5">Mike</option>
+                     <option value="6">Andrew</option>
                 </select>
 
                 <button  id="btn_modal_window" class="first-container__button">New event +</button>
@@ -30,7 +30,7 @@
     </section>
 
     <section class="second-container">
-        <table>
+        <table id="tbl">
             <tr>
                 <th>Name</th>
                 <th>Mon</th>
@@ -41,7 +41,7 @@
             </tr>
             <tr>
                 <td>10:00</td>
-                <td></td>
+                <td ></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -127,46 +127,46 @@
         </div>
 
         <div class="third-container__form">
-            <label><p>Name of event:</p> 
-                <input type="text">
+            <label for="textOut"><p>Name of event:</p> 
+                <input type="text" id="tblText" name="text">
             </label>
             <label><p>Participants:</p>
-                <select>
-                    <option>All members</option>
-                    <option>Maria</option>
-                    <option>Bob</option>
-                    <option>Alex</option>
-                    <option>Mike</option>
-                    <option>Andrew</option>
+                <select name="participants">
+                    <option value="1">All members</option>
+                    <option value="2">Maria</option>
+                    <option value="3">Bob</option>
+                    <option value="4">Alex</option>
+                    <option value="5">Mike</option>
+                    <option value="6">Andrew</option>
                </select>
             </label>
-            <label><p>Day:</p>
-                <select>
-                    <option>Monday</option>
-                    <option>Tuesday</option>
-                    <option>Wednesday</option>
-                    <option>Thursday</option>
-                    <option>Friday</option>
+            <label for="col"><p>Day:</p>
+                <select id="col" name="day">
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
                </select>
             </label>
-            <label><p>Time:</p>
-                <select>
-                    <option>10:00</option>
-                    <option>11:00</option>
-                    <option>12:00</option>
-                    <option>13:00</option>
-                    <option>14:00</option>
-                    <option>15:00</option>
-                    <option>16:00</option>
-                    <option>17:00</option>
-                    <option>18:00</option>
+            <label for="row"><p>Time:</p>
+                <select id="row" name="time">
+                    <option value="1">10:00</option>
+                    <option value="2">11:00</option>
+                    <option value="3">12:00</option>
+                    <option value="4">13:00</option>
+                    <option value="5">14:00</option>
+                    <option value="6">15:00</option>
+                    <option value="7">16:00</option>
+                    <option value="8" >17:00</option>
+                    <option value="9">18:00</option>
                </select>
             </label>
         </div>
 
         <div class="third-container__buttons">
             <button class="close_modal_window">Cancel</button>
-            <button>Create</button>
+            <button onclick="changeTable()">Create</button>
         </div>
     </div>
 
