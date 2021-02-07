@@ -123,7 +123,7 @@
             <p>Creating new event</p>
         </div>
         <div class="third-container__warning">
-            <p><i class="fas fa-times-circle"></i>Failed to create an event. Time slot is already booked.</p>
+            <p><i class="fas fa-times-circle"></i>Failed to create an event. Time slot is already <span onclick="closeMessage()"><i class="fas fa-times"></i></span></p>
         </div>
 
         <div class="third-container__form">
@@ -174,9 +174,9 @@
     </section>
 
     <section id="ask_modal" class="fourth-container">
-        <div class="modal_content">
+        <div class="modal_content-two">
 
-            <div  class="modal">
+            <div  class="modal-two">
         <div class="fourth-container__header">
             <p>Deleting an event</p>
         </div>
@@ -184,8 +184,8 @@
         <div class="fourth-container__text">текст попередження</div>
 
         <div class="fourth-container__buttons">
-            <button>No</button>
-            <button>Yes</button>
+            <button class="close_modal_window-two">No</button>
+            <button id="change-button">Yes</button>
         </div>
             </div>
             </div>

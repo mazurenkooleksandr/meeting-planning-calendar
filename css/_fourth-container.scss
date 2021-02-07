@@ -1,8 +1,14 @@
 .fourth-container {
-    width: 100%;
-    max-width: 400px;
-    height: 100%;
-    border: 1px solid #dee1e4;
+
+    .modal-two {
+        width: 100%;
+        max-width: 400px;
+        height: 240px;
+        border: 1px solid #dee1e4;
+        background-color: #fff;
+        margin: 150px auto;
+       
+    }
     
 
     .fourth-container__header {
@@ -98,3 +104,4 @@
     overflow: auto;
     background-color: rgba(0,0,0,0.6);
 } 
+
