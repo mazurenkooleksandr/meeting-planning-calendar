@@ -25,25 +25,46 @@ function changeTable() {
    let tabs = document.getElementById("tbl");
    let trs = tabs.getElementsByTagName("tr")[0];
    let text = document.getElementById('tblText').value;
+   let f = document.getElementById("participants");
+   let fl = f.options[f.selectedIndex].value;
+   let tds = tabs.getElementsByTagName("td")[0];
+   let idi = document.getElementById(`id-${fl}-${cl}-${rw}`);
+   let warning = document.querySelector('.third-container__warning')
 
-   
+  
+      
 
-   
-
-   for (let i = 0, row; row = tabs.rows[i]; i++) {
-       for (let j = 0, col; col = row.cells[j]; j++) {
-               if (trs.cells[cl].id !== 'unique_id') {
-                   trs = tabs.getElementsByTagName("tr")[rw];
-                   trs.cells[cl].innerHTML = text;
-                   trs.cells[cl].id = "unique_id";
-                   trs.cells[cl].style.backgroundColor = "#d3f5b4";  
-
-                   
-                  }else if (trs.cells[cl].id === 'unique_id') {
-                     console.log('неможливо записати');
-                  } 
-                  modal.style.display = "none";
-               
-         }
+   if (idi) {
+      warning.style.display = "block";
+      
+   } else if (!idi)  {
+      tds = tabs.getElementsByTagName("tr")[rw];
+      tds.cells[cl].innerHTML = text;
+      tds.cells[cl].id = `id-${fl}-${cl}-${rw}`;
+      tds.cells[cl].style.backgroundColor = "#d3f5b4";
+      modal.style.display = "none";     
+      
    }
-}
+       
+   
+      
+  
+
+
+
+
+      
+   
+
+}                    
+  
+
+   // for (let i = 0, row; row = tabs.rows[i]; i++) {
+   //     for (let j = 0, col; col = row.cells[j]; j++) {
+         
+                 
+               
+   //       }
+   // }
+
+    

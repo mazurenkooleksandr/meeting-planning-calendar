@@ -131,13 +131,13 @@
                 <input type="text" id="tblText" name="text">
             </label>
             <label><p>Participants:</p>
-                <select name="participants">
-                    <option value="1">All members</option>
-                    <option value="2">Maria</option>
-                    <option value="3">Bob</option>
-                    <option value="4">Alex</option>
-                    <option value="5">Mike</option>
-                    <option value="6">Andrew</option>
+                <select name="participants" id="participants">
+                    <option value="all members">All members</option>
+                    <option value="maria">Maria</option>
+                    <option value="bob">Bob</option>
+                    <option value="alex">Alex</option>
+                    <option value="mike">Mike</option>
+                    <option value="andrew">Andrew</option>
                </select>
             </label>
             <label for="col"><p>Day:</p>
@@ -173,7 +173,10 @@
         </div>
     </section>
 
-    <section class="fourth-container">
+    <section id="ask_modal" class="fourth-container">
+        <div class="modal_content">
+
+            <div  class="modal">
         <div class="fourth-container__header">
             <p>Deleting an event</p>
         </div>
@@ -184,6 +187,8 @@
             <button>No</button>
             <button>Yes</button>
         </div>
+            </div>
+            </div>
     </section>  
     <script src="popup.js"></script>
 </body>

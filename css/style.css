@@ -139,6 +139,7 @@
   height: 50px;
   font-size: 20px;
   font-family: 'Quicksand', sans-serif;
+  display: none;
 }
 
 .third-container .third-container__warning .fa-times-circle {
@@ -430,5 +431,17 @@
 .fourth-container .fourth-container__buttons button:last-child:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#bfc1d6), to(#fff));
   background: linear-gradient(top, #bfc1d6, #fff);
+}
+
+#ask_modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 /*# sourceMappingURL=style.css.map */
